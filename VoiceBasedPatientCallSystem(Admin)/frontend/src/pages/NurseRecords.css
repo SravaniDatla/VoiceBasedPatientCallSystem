@@ -1,0 +1,156 @@
+.records-container {
+    min-height: 100vh;
+    padding: 32px 24px 120px;
+    background: #f4f6fb;
+}
+
+.records-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.records-header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+}
+
+.records-header p {
+    margin: 0;
+    color: #5f6b7a;
+    font-size: 1rem;
+}
+
+.records-content {
+    display: grid;
+    gap: 24px;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.nurse-record-card,
+.records-message-card {
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 28px;
+    box-shadow: 0 14px 38px rgba(17, 31, 68, 0.08);
+}
+
+.records-message-card {
+    text-align: center;
+    color: #364152;
+    font-size: 1.05rem;
+}
+
+.nurse-info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 24px;
+    margin-bottom: 30px;
+    width: fit-content;
+}
+
+.nurse-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+    border-radius: 28px;
+    background: #eef3ff;
+    color: #1f2937;
+}
+
+.nurse-name {
+    font-weight: bold;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.nurse-details div {
+    font-size: 1.2em;
+    margin-bottom: 8px;
+}
+
+.checkbox-options {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.checkbox-options label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.checkbox-options input {
+    width: 18px;
+    height: 18px;
+}
+
+.schedule, .contact-info {
+    margin-bottom: 12px;
+    padding: 18px 20px;
+    border-radius: 18px;
+    background: #f8faff;
+}
+
+.schedule h3,
+.contact-info h3 {
+    margin-top: 0;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+.schedule-item, .contact-item {
+    font-size: 1.2em;
+    margin-bottom: 8px;
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+    .records-container {
+        padding: 24px 16px 120px;
+    }
+
+    .nurse-record-card,
+    .records-message-card {
+        padding: 22px;
+    }
+
+    .nurse-info {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .nurse-icon {
+        width: 96px;
+        height: 96px;
+    }
+
+    .nurse-name {
+        font-size: 1.5rem;
+    }
+
+    .nurse-details div,
+    .schedule-item,
+    .contact-item,
+    .checkbox-options {
+        font-size: 1rem;
+    }
+}
